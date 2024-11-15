@@ -1,0 +1,279 @@
+/* home.css */
+
+/* Hero section */
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100px;
+  padding: 20px 10vw;
+}
+
+.navbar.bg{
+  background: #161813;
+}
+.logo{
+  height: 50px;
+  margin-top: 10px;
+}
+.links-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.link-item{
+  margin: 0 20px;
+  transition: .5s;
+}
+
+.link-item a{
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.link-item:hover{
+  transform: scale(1.2);
+}
+
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.background::before, .background::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.background::before{
+  top: 0;
+  left: 0;
+  background: var(--gradient-top);
+}
+
+.background::after{
+  bottom: 0;
+  background: var(--gradient-bottom);
+}
+
+.grid-slider{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-item{
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 1;
+  transition: .5s;
+}
+
+.grid-item.hide{
+  opacity: 0;
+}
+.hero-section{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-section-title{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 80px;
+  text-align: center;
+  text-transform: capitalize; 
+}
+
+.hero-section-sub-heading{
+  text-align: center;
+  text-transform: capitalize;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+
+.background{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+}
+
+.background-image{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: -2;
+}
+
+.background::before, .background::after{
+content: '';
+position: absolute;
+left: 0;
+width: 100%;
+height: 50%;
+}
+
+.background::before{
+top: 0;
+left: 0;
+background: var(--gradient-top);
+}
+
+.background::after{
+bottom: 0;
+background: var(--gradient-bottom);
+}
+
+.grid-slider{
+width: 100%;
+height: 100%;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-item{
+width: 100%;
+height: 100%;
+background: #000;
+opacity: 1;
+transition: .5s;
+}
+
+.grid-item.hide{
+opacity: 0;
+}  
+  /* Featured Products */
+
+  
+.explore-section{
+  position: relative;
+  width: 100%;
+  padding: 80px 10vw;
+  color: #fff;
+}
+
+.section-title{
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.section-para{
+  width: 50%;
+  min-width: 300px;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 25px;
+  opacity: 0.6;
+}
+
+
+  .featured {
+    padding: 2rem;
+    text-align: center;
+
+  }
+  
+  .featured h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+  }
+  
+  .product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    background-color: #1e1e1e;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-card h4 {
+    color: #ffffff;
+    margin: 0.8rem 0;
+  }
+  
+  .product-card p {
+    color: #bbbbbb;
+    font-size: 1.1rem;
+  }
+  
+  .product-card button {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .product-card button:hover {
+    background-color: #555555;
+  }
+  footer {
+    background-color: #aebaae3d;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
